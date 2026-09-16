@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">AI Job Hunter</title>
+  <desc id="desc">A premium dark banner for AI Job Hunter, a career command center.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070b16"/>
+      <stop offset="0.58" stop-color="#111a35"/>
+      <stop offset="1" stop-color="#102b35"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(930 72) rotate(135) scale(360 420)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="740" y1="70" x2="1010" y2="275" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#c7d2fe" stroke-opacity=".07"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#glow)"/>
+  <circle cx="1000" cy="-10" r="120" fill="#6366f1" fill-opacity=".18" filter="url(#blur)"/>
+  <circle cx="1130" cy="330" r="140" fill="#14b8a6" fill-opacity=".13" filter="url(#blur)"/>
+  <path d="M0 300C220 255 300 340 520 294S850 220 1200 250" fill="none" stroke="#a5b4fc" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M0 318C220 273 300 358 520 312S850 238 1200 268" fill="none" stroke="#5eead4" stroke-opacity=".1" stroke-width="1"/>
+  <g transform="translate(94 103)">
+    <rect width="112" height="112" rx="30" fill="#101a36" stroke="#c4b5fd" stroke-opacity=".42"/>
+    <circle cx="56" cy="56" r="38" fill="none" stroke="#c7d2fe" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M56 27v8M56 77v8M27 56h8M77 56h8" stroke="#e0e7ff" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
+    <path d="m56 30 15 26-15 26-15-26 15-26Z" fill="#e0e7ff"/>
+    <path d="m56 30 15 26-15-8-15 8 15-26Z" fill="#fb7185"/>
+    <circle cx="56" cy="56" r="5" fill="#f8fafc" stroke="#312e81" stroke-width="3"/>
+    <path d="M79 20h12M85 14v12" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="250" y="126" fill="#a5b4fc" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4">CAREER OPERATING SYSTEM</text>
+  <text x="250" y="194" fill="#f8fafc" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="-1">AI Job Hunter</text>
+  <rect x="252" y="218" width="74" height="3" rx="2" fill="url(#accent)"/>
+  <text x="250" y="257" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="18" letter-spacing=".3">Discover. Tailor. Prepare. Advance.</text>
+  <text x="250" y="291" fill="#94a3b8" font-family="Arial, sans-serif" font-size="13" letter-spacing=".2">A focused command center for the full job-search loop.</text>
+  <text x="1120" y="316" fill="#64748b" font-family="Arial, sans-serif" font-size="11" text-anchor="end" letter-spacing="3">AI-ASSISTED JOB SEARCH</text>
+</svg>
