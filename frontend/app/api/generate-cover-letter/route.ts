@@ -1,9 +1,13 @@
 import Groq from "groq-sdk";
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-
 export async function POST(req: Request) {
   try {
+    const apiKey = process.env.GROQ_API_KEY;
+    if (!apiKey) {
+      return new Response("Cover letter service is not configured", { status: 503 });
+    }
+
+    const groq = new Groq({ apiKey });
     const body = await req.json();
     const { resumeText, jobDescription } = body;
 
