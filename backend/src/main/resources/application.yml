@@ -1,0 +1,102 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ai-job-hunter
+
+  threads:
+    virtual:
+      enabled: true
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:jobhunter}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 20000
+      idle-timeout: 300000
+      pool-name: JobHunterHikariPool
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.batch_size: 20
+        order_inserts: true
+        order_updates: true
+
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=1000,expireAfterWrite=10m
+
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: 587
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# ✅ FILE #12: FILE UPLOAD CONFIGURATION
+# Used by: ResumesController, ResumeService
+file:
+  upload:
+    dir: ./uploads/resumes/              # Directory to store uploaded files
+    max-size: 5242880                    # Max file size: 5MB
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000
+
+gemini:
+  api-key: ${GEMINI_API_KEY}
+  model: gemini-1.5-pro
+
+job-apis:
+  adzuna:
+    app-id: ${ADZUNA_APP_ID:}
+    api-key: ${ADZUNA_API_KEY:}
+    base-url: https://api.adzuna.com/v1/api/jobs
+  remotive:
+    base-url: https://remotive.com/api/remote-jobs
+  jobicy:
+    base-url: https://jobicy.com/api/v2/remote-jobs
+  the-muse:
+    api-key: ${THE_MUSE_API_KEY:}
+    base-url: https://www.themuse.com/api/public/jobs
+
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000}
+
+springdoc:
+  api-docs:
+    path: /api/v3/api-docs
+  swagger-ui:
+    path: /api/swagger-ui.html
+
+logging:
+  level:
+    com.jobhunter: INFO
+    org.springframework.security: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized

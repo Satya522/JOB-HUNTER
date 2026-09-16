@@ -1,0 +1,11 @@
+frontend/node_modules/
+frontend/.next/
+frontend/.env*
+backend/target/
+backend/.env*
+runtime-logs/
+.idea/
+.vscode/
+*.log
+*.tmp
+Thumbs.db
