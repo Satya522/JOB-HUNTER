@@ -1,11 +1,38 @@
 <div align="center">
 
-# 🧭 AI Job Hunter
+<p align="center">
+    <sub>CAREER OPERATING SYSTEM · AI-ASSISTED JOB SEARCH</sub>
+</p>
 
-### Turn a scattered job search into a focused career command center.
+<h1 align="center">🧭 AI Job Hunter</h1>
 
-A full-stack workspace for discovering roles, tailoring applications, preparing for interviews,
-and understanding your progress from one calm, data-rich dashboard.
+<p align="center">
+    <strong>Discover the right role. Build the right story. Move forward with intent.</strong>
+</p>
+
+<p align="center">
+    A focused command center for the full job-search loop — from the first job signal<br />
+    to a tailored application, a prepared interview, and measurable momentum.
+</p>
+
+<p align="center">
+    <a href="#-quick-start">Launch locally</a>
+    &nbsp; · &nbsp;
+    <a href="#-capabilities">Explore capabilities</a>
+    &nbsp; · &nbsp;
+    <a href="https://github.com/Satya522/JOB-HUNTER">View repository</a>
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/DISCOVER-0f172a?style=for-the-badge" alt="Discover" />
+    <img src="https://img.shields.io/badge/TAILOR-1d4ed8?style=for-the-badge" alt="Tailor" />
+    <img src="https://img.shields.io/badge/PREPARE-7c3aed?style=for-the-badge" alt="Prepare" />
+    <img src="https://img.shields.io/badge/ADVANCE-059669?style=for-the-badge" alt="Advance" />
+</p>
+
+<p align="center">
+    <em>One workspace for applications, resumes, AI tools, interviews, analytics, and follow-through.</em>
+</p>
 
 <br />
 
