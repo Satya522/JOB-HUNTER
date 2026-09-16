@@ -1,0 +1,60 @@
+name: Bug report
+description: Report a reproducible problem in AI Job Hunter
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve AI Job Hunter. Please share enough detail to reproduce the issue.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+      placeholder: Tell us what went wrong...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Frontend
+        - Backend API
+        - Authentication
+        - Resume or AI tools
+        - Job feeds
+        - Dashboard or analytics
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest sequence of steps that exposes the issue.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. See...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include browser, OS, frontend/backend versions, and relevant logs. Never include secrets.
+      placeholder: Browser, OS, commit, and error output...
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have searched existing issues.
+          required: true
+        - label: I have removed passwords, API keys, and other secrets from this report.
+          required: true

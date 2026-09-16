@@ -9,4 +9,5 @@ runtime-logs/
 .vscode/
 *.log
 *.tmp
+*.tsbuildinfo
 Thumbs.db

@@ -122,7 +122,10 @@ export default function JobFeedSection() {
             <div key={i} className="flex-shrink-0 w-[280px] h-[200px] rounded-xl bg-bg-glass animate-pulse" />
           ))
         ) : (
-          jobs.map((job, index) => (
+          jobs.map((job, index) => {
+            const matchPercentage = job.matchPercentage ?? 0
+
+            return (
             <motion.div
               key={job.id}
               initial={{ opacity: 0, y: 20 }}
@@ -142,11 +145,11 @@ export default function JobFeedSection() {
                 <span 
                   className="px-2 py-1 rounded-full text-[10px] font-mono"
                   style={{ 
-                    backgroundColor: job.matchPercentage >= 90 ? '#00FFA320' : '#FFB80020',
-                    color: job.matchPercentage >= 90 ? '#00FFA3' : '#FFB800',
+                    backgroundColor: matchPercentage >= 90 ? '#00FFA320' : '#FFB80020',
+                    color: matchPercentage >= 90 ? '#00FFA3' : '#FFB800',
                   }}
                 >
-                  {job.matchPercentage}% match
+                  {matchPercentage}% match
                 </span>
               </div>
 
@@ -200,7 +203,8 @@ export default function JobFeedSection() {
                 </button>
               </div>
             </motion.div>
-          ))
+            )
+          })
         )}
       </div>
     </div>

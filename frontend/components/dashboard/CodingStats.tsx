@@ -100,9 +100,9 @@ export default function CodingStats() {
                     <span className="font-mono text-neon-emerald">{platform.stats.solved}</span>
                   </div>
                   <div className="flex gap-1 h-2">
-                    <div className="flex-1 rounded-full bg-neon-emerald/60" style={{ width: `${(platform.stats.easy / platform.stats.solved) * 100}%` }} />
-                    <div className="flex-1 rounded-full bg-neon-gold/60" style={{ width: `${(platform.stats.medium / platform.stats.solved) * 100}%` }} />
-                    <div className="flex-1 rounded-full bg-neon-rose/60" style={{ width: `${(platform.stats.hard / platform.stats.solved) * 100}%` }} />
+                    <div className="flex-1 rounded-full bg-neon-emerald/60" style={{ width: `${((platform.stats.easy ?? 0) / Math.max(platform.stats.solved ?? 0, 1)) * 100}%` }} />
+                    <div className="flex-1 rounded-full bg-neon-gold/60" style={{ width: `${((platform.stats.medium ?? 0) / Math.max(platform.stats.solved ?? 0, 1)) * 100}%` }} />
+                    <div className="flex-1 rounded-full bg-neon-rose/60" style={{ width: `${((platform.stats.hard ?? 0) / Math.max(platform.stats.solved ?? 0, 1)) * 100}%` }} />
                   </div>
                   <div className="flex justify-between text-xs text-text-dimmer">
                     <span className="text-neon-emerald">{platform.stats.easy} Easy</span>
