@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">AI Job Hunter compass mark</title>
+  <desc id="desc">A compass needle inside a rounded square, representing direction in a job search.</desc>
+  <defs>
+    <linearGradient id="surface" x1="18" y1="12" x2="164" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172554"/>
+      <stop offset="0.55" stop-color="#4338ca"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="needle" x1="60" y1="40" x2="126" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#bfdbfe"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="164" height="164" rx="42" fill="#0b1120"/>
+  <rect x="18" y="18" width="144" height="144" rx="34" fill="url(#surface)"/>
+  <circle cx="90" cy="90" r="55" fill="none" stroke="#c4b5fd" stroke-opacity=".42" stroke-width="2"/>
+  <circle cx="90" cy="90" r="43" fill="none" stroke="#e0e7ff" stroke-opacity=".22" stroke-width="1.5"/>
+  <path d="M90 31v12M90 137v12M31 90h12M137 90h12" stroke="#e0e7ff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+  <path d="m90 45 20 45-20 45-20-45 20-45Z" fill="url(#needle)"/>
+  <path d="m90 45 20 45-20-11-20 11 20-45Z" fill="#fb7185"/>
+  <circle cx="90" cy="90" r="7" fill="#f8fafc" stroke="#1e1b4b" stroke-width="4"/>
+  <path d="M122 39h18M131 30v18" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+</svg>

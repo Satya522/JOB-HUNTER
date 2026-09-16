@@ -4,7 +4,11 @@
     <sub>CAREER OPERATING SYSTEM · AI-ASSISTED JOB SEARCH</sub>
 </p>
 
-<h1 align="center">🧭 AI Job Hunter</h1>
+<p align="center">
+    <img src="docs/job-hunter-mark.svg" width="104" alt="AI Job Hunter compass mark" />
+</p>
+
+<h1 align="center">AI Job Hunter</h1>
 
 <p align="center">
     <strong>Discover the right role. Build the right story. Move forward with intent.</strong>
