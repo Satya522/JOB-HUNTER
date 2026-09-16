@@ -20,7 +20,7 @@
 
   <properties>
     <java.version>21</java.version>
-    <jjwt.version>0.12.6</jjwt.version>
+    <jjwt.version>0.13.0</jjwt.version>
     <springdoc.version>2.6.0</springdoc.version>
     <mapstruct.version>1.6.2</mapstruct.version>
     <caffeine.version>3.1.8</caffeine.version>
