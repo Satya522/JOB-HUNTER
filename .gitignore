@@ -3,6 +3,7 @@ frontend/.next/
 frontend/.env*
 backend/target/
 backend/.env*
+frontend/FIXES_APPLIED.md
 runtime-logs/
 .idea/
 .vscode/
