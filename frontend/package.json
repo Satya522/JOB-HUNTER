@@ -15,7 +15,7 @@
     "@dnd-kit/utilities": "^3.2.2",
     "@fullcalendar/daygrid": "^6.1.15",
     "@fullcalendar/interaction": "^6.1.15",
-    "@fullcalendar/react": "^6.1.15",
+    "@fullcalendar/react": "^7.1.0",
     "@fullcalendar/timegrid": "^6.1.15",
     "@google/generative-ai": "^0.24.1",
     "@hookform/resolvers": "^3.9.0",
