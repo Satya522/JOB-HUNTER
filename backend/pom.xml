@@ -25,7 +25,7 @@
     <mapstruct.version>1.6.2</mapstruct.version>
     <caffeine.version>3.1.8</caffeine.version>
     <bucket4j.version>8.10.1</bucket4j.version>
-    <pdfbox.version>3.0.2</pdfbox.version>
+    <pdfbox.version>3.0.8</pdfbox.version>
   </properties>
 
   <dependencies>
